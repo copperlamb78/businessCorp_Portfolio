@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "@radix-ui/themes/styles.css";
+
+@theme {
+  --font-garet: "Garet", system-ui, sans-serif;
+  --font-cocomat: "Cocomat", system-ui, sans-serif;
+  --font-theseasons: "TheSeasons", serif;
+}
+
+@font-face {
+  font-family: "Garet";
+  src: url("../shared/assets/fonts/garet/Garet-Book.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Garet";
+  src: url("../shared/assets/fonts/garet/Garet-Heavy.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Cocomat";
+  src: url("../shared/assets/fonts/cocomat/Cocomat-Light-trial.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "TheSeasons";
+  src: url("../shared/assets/fonts/theSeasons/the-seasons-regular.ttf")
+    format("truetype");
+}
