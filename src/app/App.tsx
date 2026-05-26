@@ -11,11 +11,10 @@ export function App() {
       {/* Hero / Home Section */}
       <section
         id="inicio"
-        className="w-full py-40 px-8"
+        className="w-full py-16 px-4 sm:py-24 sm:px-6 md:py-32 md:px-8 lg:py-40 bg-hero-responsive"
         style={{
           backgroundImage: `url(${backgroundImg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "0px",
+          backgroundPosition: "auto",
           backgroundRepeat: "no-repeat",
         }}
       ></section>

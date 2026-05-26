@@ -7,6 +7,18 @@
   --font-theseasons: "TheSeasons", serif;
 }
 
+@layer utilities {
+  .bg-hero-responsive {
+    background-size: 250%;
+  }
+
+  @media (min-width: 768px) {
+    .bg-hero-responsive {
+      background-size: cover;
+    }
+  }
+}
+
 @font-face {
   font-family: "Garet";
   src: url("../shared/assets/fonts/garet/Garet-Book.woff2") format("woff2");
