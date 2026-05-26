@@ -13,6 +13,7 @@
     "@radix-ui/themes": "^3.3.0",
     "@tailwindcss/vite": "^4.3.0",
     "dom": "^0.0.3",
+    "phosphor-react": "^1.4.1",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "router": "^2.2.0",
