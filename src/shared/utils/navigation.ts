@@ -6,6 +6,7 @@ export const NAVIGATION_ITEMS = [
   { id: "sobre-nos", label: "Sobre nós" },
   { id: "time-bc", label: "Time BC" },
   { id: "servicos", label: "Serviços" },
+  { id: "duvidas", label: "Dúvidas" },
   { id: "contatos", label: "Contatos" },
 ] as const;
 
