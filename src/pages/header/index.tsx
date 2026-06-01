@@ -1,5 +1,5 @@
 import { Flex, Text } from "@radix-ui/themes";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { List } from "phosphor-react";
 import logo from "../../shared/assets/businessCorpLogo.svg";
 import {
@@ -11,6 +11,9 @@ import {
 export function Header() {
   const [activeSection, setActiveSection] = useState<string>("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const lastScrollY = useRef(0);
+  const ticking = useRef(false);
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -22,6 +25,35 @@ export function Header() {
     return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (ticking.current) return;
+      ticking.current = true;
+
+      window.requestAnimationFrame(() => {
+        const currentScrollY = window.scrollY;
+        const delta = currentScrollY - lastScrollY.current;
+        const isNearBottom =
+          window.innerHeight + currentScrollY >=
+          document.documentElement.scrollHeight - 50;
+
+        if (currentScrollY <= 0 || isNearBottom) {
+          setIsHeaderVisible(true);
+        } else if (delta > 5 && currentScrollY > 80) {
+          setIsHeaderVisible(false);
+        } else if (delta < -1) {
+          setIsHeaderVisible(true);
+        }
+
+        lastScrollY.current = currentScrollY;
+        ticking.current = false;
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handleNavigation = (id: string) => {
     setIsMenuOpen(false);
     navigateToSection(id);
@@ -31,7 +63,9 @@ export function Header() {
     <Flex
       direction="row"
       gap="9"
-      className="items-center justify-center bg-[#f7eaad] h-auto w-full px-4 py-6 md:px-8 md:py-8"
+      className={`sticky top-0 z-50 items-center justify-center bg-[#f7eaad] h-auto w-full px-4 py-6 md:px-8 md:py-8 transition-transform duration-300 ease-in-out ${
+        isHeaderVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
     >
       <div className="relative mx-auto flex w-full max-w-[1440px] items-center gap-4 md:justify-center md:gap-9">
         <div className="flex flex-1 items-center justify-between md:flex-none md:gap-4">
