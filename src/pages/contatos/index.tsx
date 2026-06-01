@@ -84,7 +84,7 @@ export function Contatos() {
                 >
                   <WhatsappLogo
                     size={28}
-                    className="flex-shrink-0 sm:w-8 sm:h-8 md:w-9 md:h-9 text-[#a86b1d] group-hover:scale-110 transition-transform"
+                    className="shrink-0 sm:w-8 sm:h-8 md:w-9 md:h-9 text-[#a86b1d] group-hover:scale-110 transition-transform"
                   />
                   <div>
                     <p className="font-cocomat font-semibold text-sm md:text-base lg:text-lg">
@@ -105,7 +105,7 @@ export function Contatos() {
             >
               <EnvelopeSimple
                 size={28}
-                className="flex-shrink-0 sm:w-8 sm:h-8 md:w-9 md:h-9 text-[#a86b1d] group-hover:scale-110 transition-transform"
+                className="shrink-0 sm:w-8 sm:h-8 md:w-9 md:h-9 text-[#a86b1d] group-hover:scale-110 transition-transform"
               />
               <p className="font-garet font-medium text-base md:text-lg lg:text-xl">
                 {email}
@@ -121,7 +121,7 @@ export function Contatos() {
             >
               <InstagramLogo
                 size={28}
-                className="flex-shrink-0 sm:w-8 sm:h-8 md:w-9 md:h-9 text-[#a86b1d] group-hover:scale-110 transition-transform"
+                className="shrink-0 sm:w-8 sm:h-8 md:w-9 md:h-9 text-[#a86b1d] group-hover:scale-110 transition-transform"
               />
               <p className="font-garet font-medium text-base md:text-lg lg:text-xl">
                 @{instagram}

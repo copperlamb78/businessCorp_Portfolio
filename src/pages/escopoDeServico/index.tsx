@@ -49,11 +49,11 @@ export function EscopoDeServico() {
                   <img
                     src={listArrow}
                     alt=""
-                    className="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 mt-0.5 md:mt-1"
+                    className="shrink-0 w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 mt-0.5 md:mt-1"
                   />
 
                   {/* Service Text */}
-                  <p className="w-full text-sm md:text-base lg:text-lg xl:text-xl font-garet font-semibold text-[#f1d1a2] leading-6 md:leading-7 lg:leading-8 break-words">
+                  <p className="w-full text-sm md:text-base lg:text-lg xl:text-xl font-garet font-semibold text-[#f1d1a2] leading-6 md:leading-7 lg:leading-8 break-word">
                     {service}
                   </p>
                 </li>

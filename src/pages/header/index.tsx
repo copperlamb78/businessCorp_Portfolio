@@ -67,7 +67,7 @@ export function Header() {
         isHeaderVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="relative mx-auto flex w-full max-w-[1440px] items-center gap-4 md:justify-center md:gap-9">
+      <div className="relative mx-auto flex w-full max-w-360 items-center gap-4 md:justify-center md:gap-9">
         <div className="flex flex-1 items-center justify-between md:flex-none md:gap-4">
           <button
             type="button"
@@ -94,7 +94,7 @@ export function Header() {
             <div
               className={`absolute right-0 top-full z-20 mt-2 w-48 overflow-hidden rounded-3xl transition-[max-height,opacity,padding] duration-300 md:hidden ${
                 isMenuOpen
-                  ? "max-h-[420px] border border-[#a86b1d] bg-[#f7eaad]/95 shadow-sm shadow-[#a86b1d]/10 opacity-100 py-4 pointer-events-auto"
+                  ? "max-h-105 border border-[#a86b1d] bg-[#f7eaad]/95 shadow-sm shadow-[#a86b1d]/10 opacity-100 py-4 pointer-events-auto"
                   : "max-h-0 border-transparent bg-transparent shadow-none opacity-0 py-0 pointer-events-none"
               }`}
             >

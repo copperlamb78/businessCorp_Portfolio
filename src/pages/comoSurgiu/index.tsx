@@ -1,9 +1,8 @@
-import React from "react";
 import image from "../../shared/assets/comoSurgiu.png";
 
 export default function ComoSurgiu() {
   return (
-    <section className="flex items-center justify-center min-h-screen bg-gradient-to-r px-6 py-12">
+    <section className="flex items-center justify-center min-h-screen bg-linear-to-r px-6 py-12">
       <div className="max-w-7xl w-full flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-12">
         {/* Texto */}
         <div className="w-full lg:w-2/5 flex flex-col justify-center order-2 lg:order-1">

@@ -77,7 +77,7 @@ export default function Faq() {
                       </h4>
                     </div>
 
-                    <div className="flex-shrink-0">
+                    <div className="shrink-0">
                       <button
                         onClick={() => toggleAnswer(i)}
                         aria-expanded={openIndex === i}
