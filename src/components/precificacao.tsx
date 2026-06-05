@@ -92,11 +92,10 @@ export function PrecificacaoComponent({
 
         {/* Painel Direito (Informações do Plano) */}
         <div
-          className="flex-1 border-3 p-8 rounded-3xl relative w-185 text-#fff5ca"
+          className="flex-1 border-3 p-8 rounded-3xl relative w-185 text-#fff5ca bg-[#f7eaad]"
           style={{
             backgroundColor: colors.darkBg,
-            color: colors.darkText,
-            borderColor: colors.paperBg, // Moldura creme
+            color: colors.darkText, // Moldura creme
           }}
         >
           {/* Header do Plano */}
