@@ -6,10 +6,10 @@ export default function ComoSurgiu() {
       <div className="max-w-7xl w-full flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-12">
         {/* Texto */}
         <div className="w-full lg:w-2/5 flex flex-col justify-center order-2 lg:order-1">
-          <h1 className="text-[3.625rem] text-center  xl:text-[4.125rem] font-cocomat font-light text-white mb-6 lg:mb-8">
+          <h1 className="text-[3.625rem] text-center  xl:text-[4.125rem] font-cocomat font-light text-[#f7eaad] mb-6 lg:mb-8">
             Como surgiu?
           </h1>
-          <p className="text-sm lg:text-lg text-white font-garet leading-relaxed text-justify font-light">
+          <p className="text-sm lg:text-lg text-[#f7eaad] font-garet leading-relaxed text-justify font-light">
             Nossa consultoria surgiu a partir da vivência diária de nossos
             consultores, que, ao observarem pequenos empreendimentos em
             funcionamento, identificaram dificuldades de gestão que poderiam ser

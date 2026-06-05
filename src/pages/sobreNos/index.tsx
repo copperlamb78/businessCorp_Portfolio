@@ -18,7 +18,7 @@ export function SobreNos() {
           {/* Left column - Big Brand Title */}
           <div className="flex-1 flex items-center md:items-center justify-center md:justify-center">
             <div className="text-white leading-none">
-              <span className="block text-7xl md:text-7xl text-center font-theseasons font-medium tracking-tight">
+              <span className="block text-7xl md:text-7xl xl:text-9xl text-center font-theseasons tracking-tight">
                 Business
               </span>
               <span className="block text-[100px] md:text-[100px] xl:text-[180px] text-center font-cocomat font-extrabold tracking-tight leading-[0.8]">

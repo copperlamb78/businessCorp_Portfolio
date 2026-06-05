@@ -49,7 +49,7 @@ export default function TimeBusiness() {
             </h2>
           </div>
 
-          <div className="grid gap-4 md:gap-5 lg:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+          <div className="grid gap-4 md:gap-5 lg:gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
             {[
               {
                 name: "Maria Sousa",
@@ -91,11 +91,11 @@ export default function TimeBusiness() {
                       )}
                     </div>
                   </div>
-                  <div className="text-left p-2 sm:p-3">
+                  <div className="flex flex-col justify-between text-left p-2 sm:p-3 xl:h-35">
                     <p className="text-lg sm:text-base md:text-2xl lg:text-4xl xl:text-[2.5rem] font-theseasons text-white">
                       {consultor.name}
                     </p>
-                    <p className="mt-1 sm:mt-1.5 md:mt-2 text-xs sm:text-xs md:text-base xl:text-xl font-theseasons text-[#f7dca5]">
+                    <p className="text-xs sm:text-xs md:text-base xl:text-xl font-theseasons text-[#f7dca5]">
                       {age} anos
                     </p>
                   </div>
