@@ -42,32 +42,32 @@ export function PrecificacaoComponent({
   return (
     // Fundo geral texturizado (como o da imagem)
     <div
-      className="p-8 w-full flex justify-end font-sans"
+      className="p-4 md:p-8 w-full flex justify-center font-sans overflow-hidden"
       style={{
         backgroundImage: `url('/shared/assets/backgroundimg_hero.svg')`,
         backgroundSize: "cover",
       }}
     >
-      <div className="flex flex-col md:flex-row gap-8 items-start max-w-7xl mx-auto">
+      <div className="flex flex-col lg:flex-row gap-8 items-start max-w-7xl mx-auto w-full">
         {/* Painel Esquerdo (Prancheta) */}
         <div
-          className="w-full md:w-90 shrink-0 p-6 rounded-xl relative shadow-2xl"
+          className="w-full lg:w-90 shrink-0 p-6 md:p-8 rounded-xl relative shadow-2xl mt-8 lg:mt-0"
           style={{ backgroundColor: colors.paperBg, color: colors.paperText }}
         >
           {/* Clipe da Prancheta (simulando 3D) */}
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2/4 w-48 h-16 rounded-full flex items-center justify-center">
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2/4 w-32 md:w-48 h-12 md:h-16 rounded-full flex items-center justify-center">
             <BagSimple
               weight="fill"
-              className={`text-[${iconColor}] w-full h-30 drop-shadow-[0_-3px_4px_rgba(0,0,0,0.3)]`}
+              className={`text-[${iconColor}] w-full h-24 md:h-30 drop-shadow-[0_-3px_4px_rgba(0,0,0,0.3)]`}
               preserveAspectRatio="none"
             />
           </div>
 
           {/* Conteúdo da Prancheta */}
-          <div className="mt-12 space-y-6">
+          <div className="mt-8 md:mt-12 space-y-6">
             {/* Descrição Principal (interpretando HTML) */}
             <div
-              className="text-base leading-relaxed font-normal font-cocomat [&>p>strong]:font-bold"
+              className="text-sm md:text-base leading-relaxed font-normal font-cocomat [&>p>strong]:font-bold"
               dangerouslySetInnerHTML={{ __html: descriptionPaper }}
             />
 
@@ -92,20 +92,20 @@ export function PrecificacaoComponent({
 
         {/* Painel Direito (Informações do Plano) */}
         <div
-          className="flex-1 border-3 p-8 rounded-3xl relative w-185 text-#fff5ca bg-[#f7eaad]"
+          className="flex-1 border-3 p-6 md:p-8 rounded-3xl relative w-full lg:w-auto xl:w-185 max-w-full text-#fff5ca bg-[#f7eaad]"
           style={{
             backgroundColor: colors.darkBg,
             color: colors.darkText, // Moldura creme
           }}
         >
           {/* Header do Plano */}
-          <div className="flex items-center gap-4 mb-8">
+          <div className="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
             <div
-              className="w-1.5 h-10 rounded-full"
+              className="w-1.5 h-8 md:h-10 rounded-full shrink-0"
               style={{ backgroundColor: colors.darkText }}
             />
             <h2
-              className="text-5xl font-bold font-theseasons "
+              className="text-3xl md:text-4xl lg:text-5xl font-bold font-theseasons wrap-break-word"
               style={{ textShadow: "4px 4px 0 #432704" }}
             >
               {title.split("+").map((part, index, array) => (
@@ -120,7 +120,7 @@ export function PrecificacaoComponent({
           </div>
 
           {/* Conteúdo de Texto e Benefícios */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-10">
             {/* Bloco 1 de Texto (pode conter HTML) */}
             <div
               className="text-sm font-bold font-theseasons space-y-3"
@@ -138,11 +138,11 @@ export function PrecificacaoComponent({
 
             {/* Bloco 2 com Marcadores de Ponto (list-disc) */}
             <div>
-              <ul className="space-y-3 text-sm ml-5">
+              <ul className="space-y-3 text-sm ml-0 lg:ml-5">
                 {descriptionBlock2Items.map((item, index) => (
                   <li
                     key={index}
-                    className="pl-1 text-sm font-bold font-theseasons"
+                    className="pl-0 lg:pl-1 text-sm font-bold font-theseasons"
                   >
                     {item.split(/([()/])/).map((part, i) =>
                       part === "/" || part === "(" || part === ")" ? (
@@ -159,13 +159,13 @@ export function PrecificacaoComponent({
             </div>
           </div>
           {/* Seção de Investimento */}
-          <div className="flex flex-col xl:flex-row items-center justify-between gap-4 mt-8">
-            <h3 className="text-3xl md:text-4xl font-theseasons font-medium">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-6 md:gap-4 mt-6 md:mt-8">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-theseasons font-medium text-center lg:text-left">
               Investimento:
             </h3>
             <div className="flex flex-col items-center">
               <p
-                className="text-6xl md:text-8xl xl:text-7xl font-garet tracking-tight"
+                className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-7xl font-garet tracking-tight text-center"
                 style={{ textShadow: "2px 2px 6px #db982c, 4px 4px 10px " }}
               >
                 <span className="font-theseasons">R</span>
@@ -173,7 +173,7 @@ export function PrecificacaoComponent({
                 {value}
               </p>
               {/* Nota de Rodapé */}
-              <p className="text-center text-md text-[#fff5ca]">{note}</p>
+              <p className="text-center text-sm md:text-md mt-2 md:mt-0" style={{ color: colors.darkText }}>{note}</p>
             </div>
           </div>
         </div>
