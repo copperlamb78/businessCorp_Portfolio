@@ -3,7 +3,7 @@ import React from "react";
 
 export function DesenvolverComponent() {
   return (
-    <div className="rounded-[28px] w-full max-w-[428px] xl:max-w-none flex-1 border-[3px] border-[#f8f3ea] bg-[#563512] flex flex-col font-montserrat shadow-2xl relative overflow-hidden h-full transform transition-transform duration-300 xl:scale-[1.07] z-10 min-h-[105%]">
+    <div className="rounded-[28px] w-full max-w-[428px] xl:max-w-none flex-1 border-[3px] border-[#f8f3ea] bg-[#563512] flex flex-col font-montserrat shadow-2xl relative overflow-hidden h-full transform transition-transform duration-300 xl:scale-[1.07] xl:origin-bottom z-10">
       {/* HEADER */}
       <div className="bg-[#f8f3ea] py-2 px-3 flex items-center justify-center gap-2">
         <h2 className="text-[#563512] font-black tracking-widest uppercase leading-none text-[26px] sm:text-[30px] drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">
