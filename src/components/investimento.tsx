@@ -1,5 +1,4 @@
 import { CheckCircle, UsersThree } from "phosphor-react";
-import React from "react";
 
 export interface InvestimentoProps {
   title: string;
