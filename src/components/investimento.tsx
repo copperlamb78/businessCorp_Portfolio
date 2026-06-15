@@ -48,20 +48,20 @@ export function InvestimentoComponent({
   }
 
   return (
-    <div className="rounded-[28px] w-full max-w-[400px] xl:max-w-none flex-1 border-[3px] border-[#563512] bg-[#f8f3ea] flex flex-col font-montserrat shadow-2xl relative overflow-hidden h-full">
+    <div className="rounded-[28px] w-full max-w-[400px] md:max-w-none flex-1 border-[3px] border-[#563512] bg-[#f8f3ea] flex flex-col font-montserrat shadow-2xl relative overflow-hidden h-full">
       {/* HEADER */}
-      <div className="bg-[#563512] py-2 px-3 flex items-center justify-center gap-2">
+      <div className="bg-[#563512] py-2 px-3 sm:py-3 sm:px-4 flex items-center justify-center gap-2">
         <h2
           className={`text-white font-black tracking-widest uppercase leading-none ${computedTitleClassName}`}
         >
           {title}
         </h2>
-        <Icon size={computedIconSize - 16} color="white" weight="bold" />
+        <Icon size={computedIconSize - 16} color="white" weight="bold" className="flex-shrink-0" />
       </div>
 
       {/* BODY */}
-      <div className="p-3 px-4 flex flex-col gap-2 relative z-10 flex-grow">
-        <p className="text-[#563512] text-center font-bold text-[12px] leading-tight min-h-[32px]">
+      <div className="p-4 sm:p-5 lg:p-6 flex flex-col gap-3 relative z-10 flex-grow">
+        <p className="text-[#563512] text-center font-bold text-[12px] sm:text-[14px] leading-tight min-h-[32px]">
           {description}
         </p>
 
@@ -71,20 +71,20 @@ export function InvestimentoComponent({
         </div>
 
         {/* INCLUSO BOX */}
-        <div className="border-[2px] border-[#e3cca1] rounded-[12px] p-2 pb-2 bg-transparent relative mt-0">
-          <h3 className="text-[#563512] font-black italic text-[14px] mb-1 mt-[-2px]">
+        <div className="border-[2px] border-[#e3cca1] rounded-[12px] p-3 sm:p-4 bg-transparent relative mt-0">
+          <h3 className="text-[#563512] font-black italic text-[14px] sm:text-[16px] mb-2 mt-[-2px]">
             INCLUSO:
           </h3>
-          <ul className="flex flex-col gap-[2px]">
+          <ul className="flex flex-col gap-1 sm:gap-[6px]">
             {includedItems.map((item, i) => (
-              <li key={i} className="flex items-start gap-1">
+              <li key={i} className="flex items-start gap-2">
                 <CheckCircle
-                  size={16}
+                  size={18}
                   weight="fill"
                   color="#563512"
                   className="flex-shrink-0 mt-[1px]"
                 />
-                <span className="text-[#563512] font-bold text-[9px] sm:text-[10px] leading-tight">
+                <span className="text-[#563512] font-bold text-[10px] sm:text-[11px] lg:text-[12px] leading-tight">
                   {item}
                 </span>
               </li>
@@ -93,18 +93,18 @@ export function InvestimentoComponent({
         </div>
 
         {/* ENCONTROS SECTION */}
-        <div className="flex items-start gap-2 mt-0">
-          <div className="border-[2px] border-[#563512] rounded-full p-[4px] flex-shrink-0 bg-[#dfc79b] mt-1">
-            <UsersThree size={26} weight="fill" color="#563512" />
+        <div className="flex items-start gap-3 sm:gap-4 mt-2">
+          <div className="border-[2px] border-[#563512] rounded-full p-[6px] flex-shrink-0 bg-[#dfc79b] mt-1">
+            <UsersThree size={28} weight="fill" color="#563512" />
           </div>
-          <div className="flex flex-col gap-[1px]">
-            <h4 className="text-[#563512] font-black text-[13px] mb-[2px]">
+          <div className="flex flex-col gap-[2px]">
+            <h4 className="text-[#563512] font-black text-[13px] sm:text-[15px] mb-[2px]">
               {meetingsTitle}
             </h4>
             {meetings.map((meeting, i) => (
               <p
                 key={i}
-                className="text-[#563512] font-bold text-[9px] sm:text-[10px] leading-tight mb-0"
+                className="text-[#563512] font-bold text-[10px] sm:text-[11px] lg:text-[12px] leading-tight mb-0"
               >
                 <span className="text-[#b37f2a]">{meeting.title} </span>
                 {meeting.description}
@@ -115,7 +115,7 @@ export function InvestimentoComponent({
       </div>
 
       {/* FOOTER */}
-      <div className="p-2 pt-0 mt-auto">
+      <div className="p-3 sm:p-4 pt-0 mt-auto">
         {pricing.type === "fixed" ? (
           <div className="bg-[#563512] rounded-[16px] p-2 pb-1 flex flex-col items-center border-[3px] border-white shadow-[0_8px_30px_rgba(0,0,0,0.5)] relative">
             <h3 className="text-[#f8f3ea] font-bold text-[14px] tracking-widest border-b-[2px] border-[#f8f3ea] pb-[2px] mb-1 text-center uppercase">

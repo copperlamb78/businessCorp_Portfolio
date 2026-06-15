@@ -48,7 +48,7 @@ export function App() {
             className="pointer-events-none absolute inset-0 w-full h-full object-cover"
           />
           <div className="w-full py-16 px-4 md:px-8">
-            <div className="max-w-[1500px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-stretch justify-items-center lg:justify-items-stretch justify-center gap-6 xl:gap-8">
+            <div className="max-w-[1500px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-start justify-items-center lg:justify-items-center justify-center gap-6 xl:gap-8">
               <InvestimentoComponent
                 title="IMERSÃO"
                 titleClassName="text-[32px] sm:text-[38px]"
