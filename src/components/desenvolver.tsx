@@ -1,5 +1,4 @@
 import { CheckCircle, Rocket, UsersThree } from "phosphor-react";
-import React from "react";
 
 export function DesenvolverComponent() {
   return (
