@@ -8,7 +8,9 @@ import TimeBusiness from "../pages/timeBC";
 import { EscopoDeServico } from "../pages/escopoDeServico";
 import Faq from "../pages/faq";
 import { Contatos } from "../pages/contatos";
-import { PrecificacaoComponent } from "../components/precificacao";
+import { InvestimentoComponent } from "../components/investimento";
+import { DesenvolverComponent } from "../components/desenvolver";
+import { MagnifyingGlass, Gear, ChartLineUp } from "phosphor-react";
 
 export function App() {
   return (
@@ -45,93 +47,122 @@ export function App() {
             alt=""
             className="pointer-events-none absolute inset-0 w-full h-full object-cover"
           />
-          <div className="relative z-10 flex flex-col gap-8 py-16">
-            <PrecificacaoComponent
-              title="Empreendedor Master +"
-              bgColorPaper="#f7eaad"
-              bgColorDark="#6d430e"
-              textColorPaper="#a86b1d"
-              value="2.990"
-              note="*Valor sujeito a acréscimo."
-              descriptionPaper={`<p>O pacote Ideal para empreendedores que desejam profissionalizar a gestão e preparar o negócio para um crescimento sustentável.</p>`}
-              checklistItems={[
-                "Enfrenta problemas recorrentes que impactam os resultados;",
-                "Precisa estruturar processos do zero;",
-                "Deseja aumentar a lucratividade e a produtividade;",
-                "Quer reduzir desperdícios e falhas operacionais;",
-                "Busca transformar o negócio em uma empresa mais organizada e preparada para crescer.",
-              ]}
-              descriptionBlock1={`
-          <p>Diagnóstico situacional;</p>
-          <p>2 reuniões semanais;</p>
-          <p>Organização administrativa (documental e layout);</p>
-          <p>Planejamento financeiro;</p>
-          <p>Suporte prioritário;</p>
-        `}
-              descriptionBlock2Items={[
-                "Implantação de processos simples;",
-                "Indicadores de desempenho;",
-                "Acompanhamento semanal;",
-                "Estruturação completa da gestão;",
-                "Apoio no marketing / divulgação;",
-              ]}
-            />
-            <PrecificacaoComponent
-              title="Gestão eficaz"
-              bgColorPaper="#db982c"
-              iconColor="#f7eaad"
-              bgColorDark="#6d430e"
-              textColorPaper="#fff5ca"
-              value="1.790"
-              note="*Valor sujeito a acréscimo."
-              descriptionPaper={`<p>Ideal para empreendedores que já possuem um negócio em funcionamento, mas enfrentam dificuldades com organização, produtividade e processos.</p>`}
-              checklistItems={[
-                "Enfrenta problemas recorrentes que impactam os resultados;",
-                "Precisa estruturar processos do zero;",
-                "Deseja aumentar a lucratividade e a produtividade;",
-                "Quer reduzir desperdícios e falhas operacionais;",
-                "Busca transformar o negócio em uma empresa mais organizada e preparada para crescer.",
-              ]}
-              descriptionBlock1={`
-          <p>Diagnóstico situacional;</p>
-          <p>Controle financeiro básico;</p>
-          <p>Organização administrativa;</p>
-          <p>2 reuniões presenciais;</p>
-          <p>2 reuniões online;</p>
-        `}
-              descriptionBlock2Items={[
-                "Implantação de processos simples;",
-                "Indicadores de desempenho;",
-                "Acompanhamento semanal;",
-                "Apoio no marketing / divulgação;",
-              ]}
-            />
-            <PrecificacaoComponent
-              title="Gere fácil"
-              bgColorPaper="#f7eaad"
-              bgColorDark="#6d430e"
-              iconColor="#a86b1d"
-              textColorPaper="#a86b1d"
-              value="1.190"
-              note="*Valor sujeito a acréscimo."
-              descriptionPaper={`<p>Ideal para empreendedores que estão começando a organizar o negócio e precisam ter controle das finanças e da operação.</p>`}
-              checklistItems={[
-                "Mistura contas pessoais e da empresa;",
-                "Não possui controle financeiro básico;",
-                "Tem dificuldade para organizar documentos e informações;",
-                "Precisa entender para onde o dinheiro está indo;",
-                "Quer criar uma base sólida para crescer.",
-                "Não tem ou tem pouco conhecimento de como promover seu negócio (marketing basico)",
-              ]}
-              descriptionBlock1={`
-          <p>Diagnóstico situacional;</p>
-          <p>Controle financeiro básico;</p>
-          <p>Organização administrativa;</p>
-          <p>2 reuniões presenciais;</p>
-          <p>2 reuniões online;</p>
-        `}
-              descriptionBlock2Items={["Apoio no marketing / divulgação;"]}
-            />
+          <div className="w-full py-16 px-4 md:px-8">
+            <div className="max-w-[1500px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-stretch justify-items-center lg:justify-items-stretch justify-center gap-6 xl:gap-8">
+              <InvestimentoComponent
+                title="IMERSÃO"
+                titleClassName="text-[32px] sm:text-[38px]"
+                icon={MagnifyingGlass}
+                description="Imersão e diagnóstico do seu negócio para você empreendedor: entender, organizar e dar os primeiros passos com clareza."
+                includedItems={[
+                  "2 ENCONTROS",
+                  "ESCUTA E LEVANTAMENTO DE INFORMAÇÕES",
+                  "DIAGNÓSTICO SIMPLIFICADO DO NEGÓCIO",
+                  "IDENTIFICAÇÃO DE GARGALOS",
+                  "NOÇÕES BÁSICAS DE CONTROLE FINANCEIRO",
+                  "NOÇÕES DE ORGANIZAÇÃO ADMINISTRATIVA",
+                  "SUPORTE BÁSICO VIA WHATSAPP",
+                ]}
+                meetingsTitle="ENCONTROS (ÚNICOS)"
+                meetings={[
+                  {
+                    title: "1º Encontro:",
+                    description: "Escuta e diagnóstico",
+                  },
+                  {
+                    title: "2º Encontro:",
+                    description:
+                      "Apresentação do diagnóstico e orientações iniciais",
+                  },
+                ]}
+                pricing={{
+                  type: "fixed",
+                  label: "VALOR FIXO",
+                  value: "297",
+                  cents: ",00",
+                  subtext: "*PAGAMENTO ÚNICO",
+                }}
+              />
+
+              <InvestimentoComponent
+                title="IMPLANTAÇÃO"
+                titleClassName="text-[28px] sm:text-[34px]"
+                icon={Gear}
+                description="Implementação de ferramentas e rotinas para colocar a gestão em prática e ganhar controle no dia a dia."
+                includedItems={[
+                  "APLICAÇÃO DE FERRAMENTAS DE GESTÃO",
+                  "PLANILHAS DE CONTROLE FINANCEIRO",
+                  "PADRONIZAÇÃO DE ATIVIDADES",
+                  "APOIO AO MARKETING E DIVULGAÇÃO",
+                  "CRIAÇÃO DE MATERIAIS BÁSICOS",
+                  "ACOMPANHAMENTO MENSAL",
+                  "SUPORTE VIA WHATSAPP",
+                ]}
+                meetingsTitle="ENCONTROS (MENSAIS)"
+                meetings={[
+                  {
+                    title: "1º Encontro:",
+                    description:
+                      "Implementação das ferramentas e organização financeira;",
+                  },
+                  {
+                    title: "2º Encontro:",
+                    description:
+                      "Acompanhamento da aplicação, correções e próximos passos;",
+                  },
+                ]}
+                pricing={{
+                  type: "complexity",
+                  label: "VALOR MENSAL POR COMPLEXIDADE",
+                  baixa: "R$397,00",
+                  media: "R$597,00",
+                  alta: "R$897,00",
+                }}
+              />
+
+              <InvestimentoComponent
+                title="MONITORAMENTO"
+                titleClassName="text-[22px] sm:text-[28px]"
+                icon={ChartLineUp}
+                description="Implementação de ferramentas e rotinas para colocar a gestão em prática e ganhar controle no dia a dia."
+                includedItems={[
+                  "APLICAÇÃO DE FERRAMENTAS DE GESTÃO",
+                  "PLANILHAS DE CONTROLE FINANCEIRO",
+                  "PADRONIZAÇÃO DE ATIVIDADES",
+                  "APOIO AO MARKETING E DIVULGAÇÃO",
+                  "CRIAÇÃO DE MATERIAIS BÁSICOS",
+                  "ACOMPANHAMENTO MENSAL",
+                  "SUPORTE VIA WHATSAPP",
+                ]}
+                meetingsTitle="ENCONTROS (MENSAIS)"
+                meetings={[
+                  {
+                    title: "1º Encontro:",
+                    description: "Análise dos dados coletados;",
+                  },
+                  {
+                    title: "2º Encontro:",
+                    description: "Avaliação de indicadores;",
+                  },
+                  {
+                    title: "3º Encontro:",
+                    description: "Ajustes nas ferramentas e processos;",
+                  },
+                  {
+                    title: "4º Encontro:",
+                    description: "Reunião estratégica e planejamento;",
+                  },
+                ]}
+                pricing={{
+                  type: "complexity",
+                  label: "VALOR MENSAL POR COMPLEXIDADE",
+                  baixa: "R$497,00",
+                  media: "R$697,00",
+                  alta: "R$997,00",
+                }}
+              />
+              <DesenvolverComponent />
+            </div>
           </div>
         </div>
       </section>

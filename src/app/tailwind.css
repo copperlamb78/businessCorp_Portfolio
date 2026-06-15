@@ -5,6 +5,7 @@
   --font-garet: "Garet", system-ui, sans-serif;
   --font-cocomat: "Cocomat", system-ui, sans-serif;
   --font-theseasons: "TheSeasons", serif;
+  --font-montserrat: "Montserrat", sans-serif;
 }
 
 @layer utilities {
