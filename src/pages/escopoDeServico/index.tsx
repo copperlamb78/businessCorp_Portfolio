@@ -21,7 +21,7 @@ export function EscopoDeServico() {
         <div className="flex flex-col md:flex-row items-stretch gap-8 md:gap-12 lg:gap-16 px-4 sm:px-6 md:px-8 lg:px-20 xl:px-30">
           {/* Left column - Title and Icon */}
           <div className="flex flex-col items-center justify-center md:items-start md:justify-start w-full md:w-1/2">
-            <h1 className="font text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-cocomat font-semibold text-[#f7dca5] mb-8 md:mb-12 text-center md:text-left leading-tight">
+            <h1 className="font text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-cocomat font-semibold text-[#f7eaad] mb-8 md:mb-12 text-center md:text-left leading-tight">
               Escopo
               <br />
               <span className="font-cocomat font-semibold">de Serviços</span>
@@ -53,7 +53,7 @@ export function EscopoDeServico() {
                   />
 
                   {/* Service Text */}
-                  <p className="w-full text-sm md:text-base lg:text-lg xl:text-xl font-garet font-semibold text-[#f1d1a2] leading-6 md:leading-7 lg:leading-8 break-word">
+                  <p className="w-full text-sm md:text-base lg:text-lg xl:text-xl font-garet font-semibold text-[#f7eaad] leading-6 md:leading-7 lg:leading-8 break-word">
                     {service}
                   </p>
                 </li>
@@ -61,7 +61,6 @@ export function EscopoDeServico() {
             </ul>
           </div>
         </div>
-        
       </div>
     </section>
   );
