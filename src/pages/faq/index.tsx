@@ -50,7 +50,7 @@ export default function Faq() {
         src={boneco}
         alt=""
         aria-hidden
-        className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-20 w-150 md:left-8 md:top-28 md:w-72 lg:left-10 lg:top-32 lg:w-96 xl:left-12 xl:top-30 opacity-10 z-0"
+        className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-20 w-150 md:top-28 md:w-96 lg:top-32 lg:w-[450px] xl:top-30 xl:w-[600px] opacity-10 z-0"
       />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="flex items-center gap-4 mb-6">
