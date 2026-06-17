@@ -43,7 +43,7 @@ export function InvestimentoComponent({
   }
 
   return (
-    <div className="rounded-[28px] w-full max-w-100 md:max-w-none flex-1 border-[3px] border-[#563512] bg-[#f8f3ea] flex flex-col font-montserrat shadow-2xl relative overflow-hidden h-full">
+    <div className="rounded-[28px] w-full max-w-100 md:max-w-none flex-1 border-[3px] border-[#563512] bg-[#f8f3ea] flex flex-col font-montserrat shadow-2xl relative overflow-hidden h-full transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(86,53,18,0.3)]">
       {/* HEADER */}
       <div className="bg-[#563512] h-15 py-2 px-3 sm:py-3 sm:px-4 flex items-center justify-center gap-2">
         <h2
@@ -121,9 +121,7 @@ export function InvestimentoComponent({
               {pricing.label}
             </h3>
             <div className="flex items-start text-[#db9a2f] font-black mt-0 drop-shadow-[0_4px_6px_rgba(0,0,0,0.8)]">
-              <span className="text-xl mt-2.5 mr-1 tracking-tighter">
-                R$
-              </span>
+              <span className="text-xl mt-2.5 mr-1 tracking-tighter">R$</span>
               <span className="text-[54px] leading-none tracking-tighter">
                 {pricing.value}
               </span>

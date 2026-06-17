@@ -2,7 +2,7 @@ import { CheckCircle, Rocket, UsersThree } from "phosphor-react";
 
 export function DesenvolverComponent() {
   return (
-    <div className="rounded-[28px] w-full max-w-107 xl:max-w-none flex-1 border-[3px] border-[#f8f3ea] bg-[#563512] flex flex-col font-montserrat shadow-2xl relative overflow-hidden h-full transform transition-transform duration-300 xl:scale-[1.07] xl:origin-bottom z-10">
+    <div className="rounded-[28px] w-full max-w-107 xl:max-w-none flex-1 border-[3px] border-[#f8f3ea] bg-[#563512] flex flex-col font-montserrat shadow-2xl relative overflow-hidden h-full transform transition-all duration-300 xl:scale-[1.07] xl:hover:scale-[1.09] hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)] xl:origin-bottom z-10">
       {/* HEADER */}
       <div className="bg-[#f8f3ea] py-2 px-3 flex items-center justify-center gap-2">
         <h2 className="text-[#563512] font-black tracking-widest uppercase leading-none text-[26px] sm:text-[30px] drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">

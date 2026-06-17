@@ -71,7 +71,7 @@ export function Header() {
         <div className="flex flex-1 items-center justify-between md:flex-none md:gap-4">
           <button
             type="button"
-            onClick={() => navigateToSection("inicio")}
+            onClick={() => navigateToSection("sobre-nos")}
             className="cursor-pointer"
             aria-label="Navigate to home"
           >

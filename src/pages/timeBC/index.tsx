@@ -81,7 +81,7 @@ export default function TimeBusiness() {
                   className="bg-[#a86b1d] w-56 sm:w-72 md:w-80 lg:w-85 xl:w-90 mx-auto"
                 >
                   <div className="h-56 sm:h-64 md:h-70 lg:h-75 xl:h-80 flex items-end justify-center">
-                    <div className="w-36 sm:w-44 md:w-55 lg:w-60 xl:w-65 relative bottom-2 sm:bottom-3 md:bottom-4 lg:bottom-5 xl:bottom-6 left-0 sm:left-7 md:left-10 lg:left-11 xl:left-12.5 h-full">
+                    <div className="hover:scale-105 transition-all duration-500 w-36 sm:w-44 md:w-55 lg:w-60 xl:w-65 relative bottom-2 sm:bottom-3 md:bottom-4 lg:bottom-5 xl:bottom-6 left-0 sm:left-7 md:left-10 lg:left-11 xl:left-12.5 h-full">
                       {consultor.name == "Maria Sousa" ? (
                         <img src={maria} alt={consultor.name} />
                       ) : consultor.name == "Gabriel Evangelista" ? (

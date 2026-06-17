@@ -51,7 +51,7 @@ export function PrecificacaoComponent({
       <div className="flex flex-col lg:flex-row gap-8 items-start max-w-7xl mx-auto w-full">
         {/* Painel Esquerdo (Prancheta) */}
         <div
-          className="w-full lg:w-90 shrink-0 p-6 md:p-8 rounded-xl relative shadow-2xl mt-8 lg:mt-0"
+          className="w-full lg:w-90 shrink-0 p-6 md:p-8 rounded-xl relative shadow-2xl mt-8 lg:mt-0 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_50px_rgba(0,0,0,0.4)]"
           style={{ backgroundColor: colors.paperBg, color: colors.paperText }}
         >
           {/* Clipe da Prancheta (simulando 3D) */}
@@ -92,7 +92,7 @@ export function PrecificacaoComponent({
 
         {/* Painel Direito (Informações do Plano) */}
         <div
-          className="flex-1 border-3 p-6 md:p-8 rounded-3xl relative w-full lg:w-auto xl:w-185 max-w-full text-#fff5ca bg-[#f7eaad]"
+          className="flex-1 border-3 p-6 md:p-8 rounded-3xl relative w-full lg:w-auto xl:w-185 max-w-full text-#fff5ca bg-[#f7eaad] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
           style={{
             backgroundColor: colors.darkBg,
             color: colors.darkText, // Moldura creme
@@ -173,7 +173,12 @@ export function PrecificacaoComponent({
                 {value}
               </p>
               {/* Nota de Rodapé */}
-              <p className="text-center text-sm md:text-md mt-2 md:mt-0" style={{ color: colors.darkText }}>{note}</p>
+              <p
+                className="text-center text-sm md:text-md mt-2 md:mt-0"
+                style={{ color: colors.darkText }}
+              >
+                {note}
+              </p>
             </div>
           </div>
         </div>

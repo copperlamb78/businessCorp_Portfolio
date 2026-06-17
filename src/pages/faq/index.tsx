@@ -68,7 +68,7 @@ export default function Faq() {
               {FAQS.map((item, i) => (
                 <article
                   key={i}
-                  className="bg-[#6d430e]/20 rounded-lg p-4 md:p-6"
+                  className="bg-[#6d430e]/20 rounded-lg p-4 md:p-6 transition-all duration-300 hover:bg-[#6d430e]/30 hover:shadow-lg hover:-translate-y-1"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex-1">
@@ -81,7 +81,7 @@ export default function Faq() {
                       <button
                         onClick={() => toggleAnswer(i)}
                         aria-expanded={openIndex === i}
-                        className="inline-flex cursor-pointer items-center gap-2 rounded-md border border-[#a86b1d] bg-transparent px-3 py-2 text-sm text-[#f2e3b0] transition-colors hover:bg-[#a86b1d] hover:text-white focus:ring-2 focus:ring-[#8b5a2b]/40"
+                        className="inline-flex cursor-pointer items-center gap-2 rounded-md border border-[#a86b1d] bg-transparent px-3 py-2 text-sm text-[#f2e3b0] transition-all duration-300 hover:bg-[#a86b1d] hover:text-white hover:scale-105 hover:shadow-[0_0_10px_rgba(168,107,29,0.5)] focus:ring-2 focus:ring-[#8b5a2b]/40"
                       >
                         {openIndex === i
                           ? "Esconder resposta"

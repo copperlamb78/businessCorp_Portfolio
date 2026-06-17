@@ -31,7 +31,7 @@ export default function ComoSurgiu() {
             <img
               src={image}
               alt="Como surgiu"
-              className="w-full h-auto rounded-lg object-cover"
+              className="w-full h-auto rounded-lg object-cover transition-all duration-500 hover:scale-105 "
             />
           </div>
         </div>

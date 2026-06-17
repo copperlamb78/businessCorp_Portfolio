@@ -32,7 +32,7 @@ export function EscopoDeServico() {
               <img
                 src={icon}
                 alt="Briefcase"
-                className="max-w-full max-h-full w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-80 xl:h-80"
+                className="max-w-full max-h-full w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-80 xl:h-80 transition-transform duration-500 hover:scale-105 hover:-rotate-3 drop-shadow-2xl"
               />
             </div>
           </div>
@@ -43,13 +43,13 @@ export function EscopoDeServico() {
               {services.map((service, index) => (
                 <li
                   key={index}
-                  className="flex w-full gap-4 sm:gap-4 md:gap-5 lg:gap-6 items-start"
+                  className="flex w-full gap-4 sm:gap-4 md:gap-5 lg:gap-6 items-start group hover:-translate-y-1 transition-transform duration-300"
                 >
                   {/* List Arrow Icon */}
                   <img
                     src={listArrow}
                     alt=""
-                    className="shrink-0 w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 mt-0.5 md:mt-1"
+                    className="shrink-0 w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 mt-0.5 md:mt-1 transition-transform duration-300 group-hover:scale-110"
                   />
 
                   {/* Service Text */}

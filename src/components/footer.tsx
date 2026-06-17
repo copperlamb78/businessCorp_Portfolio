@@ -38,7 +38,7 @@ export function Footer() {
       <div className="flex flex-col sm:flex-row gap-4">
         <button
           onClick={() => setIsModalOpen(true)}
-          className="px-8 py-2.5 border-[3px] border-[#563512] bg-[#f8f3ea] text-[#563512] font-black rounded-full hover:bg-[#563512] hover:text-[#f8f3ea] hover:border-[#f8f3ea] transition-colors shadow-lg uppercase tracking-widest text-[12px] sm:text-[14px] cursor-pointer"
+          className="px-8 py-2.5 border-[3px] border-[#563512] bg-[#f8f3ea] text-[#563512] font-black rounded-full hover:bg-[#563512] hover:text-[#f8f3ea] hover:border-[#f8f3ea] hover:scale-105 hover:shadow-[0_0_20px_rgba(248,243,234,0.4)] transition-all duration-300 shadow-lg uppercase tracking-widest text-[12px] sm:text-[14px] cursor-pointer"
         >
           Contato
         </button>
@@ -46,7 +46,7 @@ export function Footer() {
           href="https://antoniogabriel.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-8 py-2.5 border-[3px] border-[#f8f3ea] bg-transparent text-[#f8f3ea] font-black rounded-full hover:bg-[#f8f3ea] hover:text-[#563512] transition-colors shadow-lg uppercase tracking-widest text-[12px] sm:text-[14px] flex items-center justify-center cursor-pointer"
+          className="px-8 py-2.5 border-[3px] border-[#f8f3ea] bg-transparent text-[#f8f3ea] font-black rounded-full hover:bg-[#f8f3ea] hover:text-[#563512] hover:scale-105 hover:shadow-[0_0_20px_rgba(248,243,234,0.4)] transition-all duration-300 shadow-lg uppercase tracking-widest text-[12px] sm:text-[14px] flex items-center justify-center cursor-pointer"
         >
           Outros Projetos
         </a>
@@ -76,7 +76,7 @@ export function Footer() {
                 href="https://github.com/copperlamb78"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-3 rounded-xl border-2 border-[#e3cca1] bg-transparent hover:bg-[#e3cca1]/40 transition-colors text-[#563512] font-bold text-[14px]"
+                className="flex items-center gap-3 p-3 rounded-xl border-2 border-[#e3cca1] bg-transparent hover:bg-[#e3cca1]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-md text-[#563512] font-bold text-[14px]"
               >
                 <GithubLogo size={24} weight="fill" color="#563512" />
                 <span>GitHub</span>
@@ -85,7 +85,7 @@ export function Footer() {
                 href="https://www.linkedin.com/in/antoniofalcaonascimento/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-3 rounded-xl border-2 border-[#e3cca1] bg-transparent hover:bg-[#e3cca1]/40 transition-colors text-[#563512] font-bold text-[14px]"
+                className="flex items-center gap-3 p-3 rounded-xl border-2 border-[#e3cca1] bg-transparent hover:bg-[#e3cca1]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-md text-[#563512] font-bold text-[14px]"
               >
                 <LinkedinLogo size={24} weight="fill" color="#563512" />
                 <span>LinkedIn</span>
@@ -94,7 +94,7 @@ export function Footer() {
                 href="https://wa.me/5575992197406"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-3 rounded-xl border-2 border-[#e3cca1] bg-transparent hover:bg-[#e3cca1]/40 transition-colors text-[#563512] font-bold text-[14px]"
+                className="flex items-center gap-3 p-3 rounded-xl border-2 border-[#e3cca1] bg-transparent hover:bg-[#e3cca1]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-md text-[#563512] font-bold text-[14px]"
               >
                 <WhatsappLogo size={24} weight="fill" color="#563512" />
                 <span>WhatsApp</span>
@@ -102,7 +102,7 @@ export function Footer() {
               <div className="flex gap-2 w-full">
                 <a
                   href="mailto:nascimentogabriel.2004@gmail.com"
-                  className="flex-1 flex items-center gap-3 p-3 rounded-xl border-2 border-[#e3cca1] bg-transparent hover:bg-[#e3cca1]/40 transition-colors text-[#563512] font-bold text-[14px]"
+                  className="flex-1 flex items-center gap-3 p-3 rounded-xl border-2 border-[#e3cca1] bg-transparent hover:bg-[#e3cca1]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-md text-[#563512] font-bold text-[14px]"
                 >
                   <EnvelopeSimple size={24} weight="fill" color="#563512" />
                   <span>E-mail</span>
@@ -111,7 +111,7 @@ export function Footer() {
                   onClick={handleCopyEmail}
                   disabled={emailCopied}
                   title="Copiar E-mail"
-                  className="flex items-center justify-center p-3 rounded-xl border-2 border-[#e3cca1] bg-transparent hover:bg-[#e3cca1]/40 transition-colors text-[#563512] cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="flex items-center justify-center p-3 rounded-xl border-2 border-[#e3cca1] bg-transparent hover:bg-[#e3cca1]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-md text-[#563512] cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none disabled:shadow-none"
                 >
                   {emailCopied ? (
                     <Check size={24} weight="bold" className="text-green-600" />
@@ -124,7 +124,7 @@ export function Footer() {
                 href="https://www.instagram.com/antoniobil.2014/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-3 rounded-xl border-2 border-[#e3cca1] bg-transparent hover:bg-[#e3cca1]/40 transition-colors text-[#563512] font-bold text-[14px]"
+                className="flex items-center gap-3 p-3 rounded-xl border-2 border-[#e3cca1] bg-transparent hover:bg-[#e3cca1]/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-md text-[#563512] font-bold text-[14px]"
               >
                 <InstagramLogo size={24} weight="fill" color="#563512" />
                 <span>Instagram</span>
