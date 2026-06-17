@@ -1,6 +1,5 @@
 import { Flex } from "@radix-ui/themes/dist/cjs/components/index.js";
 import { Header } from "../pages/header";
-import backgroundImg from "../shared/assets/backgroundimg_header.svg";
 import backgroundImgHero from "../shared/assets/backgroundimg_hero.svg";
 import { SobreNos } from "../pages/sobreNos";
 import ComoSurgiu from "../pages/comoSurgiu";
@@ -10,22 +9,13 @@ import Faq from "../pages/faq";
 import { Contatos } from "../pages/contatos";
 import { InvestimentoComponent } from "../components/investimento";
 import { DesenvolverComponent } from "../components/desenvolver";
+import { Footer } from "../components/footer";
 import { MagnifyingGlass, Gear, ChartLineUp } from "phosphor-react";
 
 export function App() {
   return (
     <Flex direction="column" gap="0" className="w-full h-full bg-[#a86b1d] ">
       <Header />
-
-      {/* Hero / Home Section */}
-      <section
-        id="inicio"
-        className="w-full py-16 px-4 sm:py-24 sm:px-6 md:py-32 md:px-8 lg:py-40 bg-hero-responsive bg-center md:bg-auto"
-        style={{
-          backgroundImage: `url(${backgroundImg})`,
-          backgroundRepeat: "no-repeat",
-        }}
-      ></section>
 
       {/* Sobre nós Section */}
       <section id="sobre-nos" className="w-full">
@@ -48,10 +38,10 @@ export function App() {
             className="pointer-events-none absolute inset-0 w-full h-full object-cover"
           />
           <div className="w-full py-16 px-4 md:px-8">
-            <div className="max-w-[1500px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-start justify-items-center lg:justify-items-center justify-center gap-6 xl:gap-8">
+            <div className="max-w-375 w-full mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-start justify-items-center lg:justify-items-center justify-center gap-6 xl:gap-8">
               <InvestimentoComponent
                 title="IMERSÃO"
-                titleClassName="text-[32px] sm:text-[38px]"
+                titleClassName="text-[32px] sm:text-[38px] xl:text-[28px] 2xl:text-[38px]"
                 icon={MagnifyingGlass}
                 description="Imersão e diagnóstico do seu negócio para você empreendedor: entender, organizar e dar os primeiros passos com clareza."
                 includedItems={[
@@ -86,7 +76,7 @@ export function App() {
 
               <InvestimentoComponent
                 title="IMPLANTAÇÃO"
-                titleClassName="text-[28px] sm:text-[34px]"
+                titleClassName="text-[28px] sm:text-[34px] xl:text-[24px] 2xl:text-[34px]"
                 icon={Gear}
                 description="Implementação de ferramentas e rotinas para colocar a gestão em prática e ganhar controle no dia a dia."
                 includedItems={[
@@ -122,7 +112,7 @@ export function App() {
 
               <InvestimentoComponent
                 title="MONITORAMENTO"
-                titleClassName="text-[22px] sm:text-[28px]"
+                titleClassName="text-[22px] sm:text-[28px] xl:text-[20px] 2xl:text-[28px]"
                 icon={ChartLineUp}
                 description="Implementação de ferramentas e rotinas para colocar a gestão em prática e ganhar controle no dia a dia."
                 includedItems={[
@@ -176,6 +166,9 @@ export function App() {
       <section id="contatos" className="w-full">
         <Contatos />
       </section>
+
+      {/* Footer Section */}
+      <Footer />
     </Flex>
   );
 }
